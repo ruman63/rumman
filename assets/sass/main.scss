@@ -1,0 +1,9 @@
+@tailwind preflight;
+*:focus {
+    outline: none;
+}
+@tailwind components;
+a {
+    @apply .no-underline .text-black ;
+}
+@tailwind utilities;
