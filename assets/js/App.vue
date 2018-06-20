@@ -2,19 +2,11 @@
   <div id="app">
     <header class="bg-black lg:h-screen"
       style="height:400px">
-      <div class="container mx-auto flex flex-col justify-between align-center h-full">
-        <h1 class="text-white">Ruman Saleem</h1>
+      <div class="container mx-auto flex flex-col justify-center items-center h-full text-white">
+        <h1>Rumm'An Saleem</h1>
+        <h3> Web Developer </h3>
       </div>
     </header>
-    <main class="relative">
-      <transition
-        name="anim"
-        enter-active-class="animated fadeInUp"
-        leave-active-class="animated fadeIn"
-        mode="in-out"
-      >
-      </transition >
-    </main>
   </div>
 </template>
 <script>
