@@ -4,6 +4,7 @@
 }
 @tailwind components;
 a {
-    @apply .no-underline .text-black ;
+    @apply .no-underline ;
+    color: inherit;
 }
 @tailwind utilities;
