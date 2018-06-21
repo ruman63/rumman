@@ -28,24 +28,20 @@
                     <fa-icon name="stack-overflow" class="h-4 fill-current text-orange mr-1"></fa-icon>
                 </div>
               <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ullam sed atque perspiciatis id praesentium! Minima inventore reprehenderit ea expedita iure quae nesciunt dignissimos at ratione? Ea omnis ut expedita.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores optio modi ea ducimus minus rem mollitia, sunt aspernatur beatae asperiores consectetur aliquid vitae natus incidunt ipsam magni ullam non.</p>
+              <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores optio modi ea ducimus minus rem mollitia, sunt aspernatur beatae asperiores consectetur aliquid vitae natus incidunt ipsam magni ullam non.</p>
+              <div class="flex items-center">
+                <!-- <span class="font-bold text-xs tracking-wide uppercase mr-4">Technologies I Use</span> -->
+                <span title="HTML 5"><fa-icon name="html5" class="fill-current text-white hover:text-orange mx-2 h-6"></fa-icon></span>
+                <span title="PHP"><fa-icon name="php" class="fill-current text-white hover:text-indigo mx-2 h-6"></fa-icon></span>
+                <span title="Laravel"><fa-icon name="laravel" class="fill-current text-white hover:text-red mx-2 h-6"></fa-icon></span>
+                <span title="CSS 3"><fa-icon name="css3" class="fill-current text-white hover:text-blue mx-2 h-6"></fa-icon></span>
+                <span title="SASS"><fa-icon name="sass" class="fill-current text-white hover:text-pink mx-2 h-6"></fa-icon></span>
+                <span title="JavaScript"><fa-icon name="js-square" class="fill-current text-white hover:text-yellow mx-2 h-6"></fa-icon></span>
+                <span title="Vuejs"><fa-icon name="vuejs" class="fill-current text-white hover:text-teal-dark mx-2 h-6"></fa-icon></span>
+              </div>
             </div>
           </div>
         </div>
-        <footer class="bg-black-alpha-50 text-orange py-2 w-full">
-          <div class="container mx-auto">
-            <div class="flex justify-center items-center">
-              <!-- <span class="font-bold text-xs tracking-wide uppercase mr-4">Technologies I Use</span> -->
-              <span title="HTML 5"><fa-icon name="html5" class="fill-current text-white hover:text-orange mx-2 h-6"></fa-icon></span>
-              <span title="PHP"><fa-icon name="php" class="fill-current text-white hover:text-indigo mx-2 h-6"></fa-icon></span>
-              <span title="Laravel"><fa-icon name="laravel" class="fill-current text-white hover:text-red mx-2 h-6"></fa-icon></span>
-              <span title="CSS 3"><fa-icon name="css3" class="fill-current text-white hover:text-blue mx-2 h-6"></fa-icon></span>
-              <span title="SASS"><fa-icon name="sass" class="fill-current text-white hover:text-pink mx-2 h-6"></fa-icon></span>
-              <span title="JavaScript"><fa-icon name="js-square" class="fill-current text-white hover:text-yellow mx-2 h-6"></fa-icon></span>
-              <span title="Vuejs"><fa-icon name="vuejs" class="fill-current text-white hover:text-teal-dark mx-2 h-6"></fa-icon></span>
-            </div>
-          </div>
-        </footer>
       </div>
     </section>
   </div>
