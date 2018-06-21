@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <section class="bg-cover h-400px md:h-screen" style="background-image: url('/images/banner.jpg');">
-      <div class="bg-black-alpha-70 flex flex-col items-center h-full text-white">
-        <header class="bg-black-alpha-70 py-3 w-full">
+    <section class="bg-cover h-400px md:min-h-screen" style="background-image: url('/images/banner.jpg');">
+      <div class="bg-black-alpha-90 flex flex-col items-center h-full text-white">
+        <header class="bg-black-alpha-50 py-3 w-full">
           <div class="container mx-auto">
             <nav class="flex items-center">
               <ul class="list-reset flex flex-1 font-semibold text-orange">
-                <li><a class="p-4 text-xs uppercase tracking-wide border-2 border-transparent hover:border-orange hover:text-white" href="#">Home</a></li>
-                <li><a class="p-4 text-xs uppercase tracking-wide border-2 border-transparent hover:border-orange hover:text-white" href="#">About</a></li>
-                <li><a class="p-4 text-xs uppercase tracking-wide border-2 border-transparent hover:border-orange hover:text-white" href="#">My Work</a></li>
-                <li><a class="p-4 text-xs uppercase tracking-wide border-2 border-transparent hover:border-orange hover:text-white" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">My Work</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
               </ul>
               <ul class="list-reset">
                 <button class="text-md py-2 px-4 rounded border-2 border-orange text-orange hover:border-white hover:text-white font-semibold">Hire Me!</button>
@@ -18,22 +18,31 @@
           </div>
         </header>
         <div class="flex-1 flex flex-col justify-center w-full">
-          <div class="container mx-auto p-8">
-            <h1 class="text-5xl uppercase mb-3"> Rumman Saleem </h1>
-            <h3 class="text-2xl mb-6"> Web Developer </h3>
+          <div class="container mx-auto">
+            <div class="inline-block p-8 w-auto lg:max-w-1/2">
+              <h1 class="text-4xl uppercase mb-2 tracking-wide leading-none">Rumman Saleem</h1>
+                <h3 class="text-2xl font-semibold mb-2 leading-none">Web Developer</h3>  
+                <div class="mb-6">
+                    <fa-icon name="twitter" class="h-4 fill-current text-blue-light mr-1"></fa-icon>
+                    <fa-icon name="github" class="h-4 fill-current text-yellow-light mr-1"></fa-icon>
+                    <fa-icon name="stack-overflow" class="h-4 fill-current text-orange mr-1"></fa-icon>
+                </div>
+              <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ullam sed atque perspiciatis id praesentium! Minima inventore reprehenderit ea expedita iure quae nesciunt dignissimos at ratione? Ea omnis ut expedita.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores optio modi ea ducimus minus rem mollitia, sunt aspernatur beatae asperiores consectetur aliquid vitae natus incidunt ipsam magni ullam non.</p>
+            </div>
           </div>
         </div>
-        <footer class="bg-black-alpha-90 text-orange py-2 w-full">
+        <footer class="bg-black-alpha-50 text-orange py-2 w-full">
           <div class="container mx-auto">
             <div class="flex justify-center items-center">
               <!-- <span class="font-bold text-xs tracking-wide uppercase mr-4">Technologies I Use</span> -->
-              <svg class="fill-current text-orange mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
-              <svg class="fill-current text-blue mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/></svg>
-              <svg class="fill-current text-red mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M637.5 241.6c-4.2-4.8-62.8-78.1-73.1-90.5-10.3-12.4-15.4-10.2-21.7-9.3-6.4.9-80.5 13.4-89.1 14.8-8.6 1.5-14 4.9-8.7 12.3 4.7 6.6 53.4 75.7 64.2 90.9l-193.7 46.4L161.2 48.7c-6.1-9.1-7.4-12.3-21.4-11.6-14 .6-120.9 9.5-128.5 10.2-7.6.6-16 4-8.4 22s129 279.6 132.4 287.2c3.4 7.6 12.2 20 32.8 15 21.1-5.1 94.3-24.2 134.3-34.7 21.1 38.3 64.2 115.9 72.2 127 10.6 14.9 18 12.4 34.3 7.4 12.8-3.9 199.6-71.1 208-74.5 8.4-3.5 13.6-5.9 7.9-14.4-4.2-6.2-53.5-72.2-79.3-106.8 17.7-4.7 80.6-21.4 87.3-23.3 7.9-2 9-5.8 4.7-10.6zm-352.2 72c-2.3.5-110.8 26.5-116.6 27.8-5.8 1.3-5.8.7-6.5-1.3-.7-2-129-266.7-130.8-270-1.8-3.3-1.7-5.9 0-5.9s102.5-9 106-9.2c3.6-.2 3.2.6 4.5 2.8 0 0 142.2 245.4 144.6 249.7 2.6 4.3 1.1 5.6-1.2 6.1zm306 57.4c1.7 2.7 3.5 4.5-2 6.4-5.4 2-183.7 62.1-187.1 63.6-3.5 1.5-6.2 2-10.6-4.5s-62.4-106.8-62.4-106.8L518 280.6c4.7-1.5 6.2-2.5 9.2 2.2 2.9 4.8 62.4 85.5 64.1 88.2zm12.1-134.1c-4.2.9-73.6 18.1-73.6 18.1l-56.7-77.8c-1.6-2.3-2.9-4.5 1.1-5s68.4-12.2 71.3-12.8c2.9-.7 5.4-1.5 9 3.4 3.6 4.9 52.6 67 54.5 69.4 1.8 2.3-1.4 3.7-5.6 4.7z"/></svg>
-              <svg class="fill-current text-blue-dark mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"/></svg>
-              <svg class="fill-current text-teal-dark mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"/></svg>
-              <svg class="fill-current text-yellow mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
-              <svg class="fill-current text-pink mx-2 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640.4 512"><path d="M551.1 291.9c-22.4.1-41.8 5.5-58 13.5-5.9-11.9-12-22.3-13-30.1-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2c-.1-1.1-1.4-6.6-14.3-6.7-12.9-.1-24 2.5-25.3 5.9-1.3 3.4-3.8 11.1-5.3 19.1-2.3 11.7-25.8 53.5-39.1 75.3-4.4-8.5-8.1-16-8.9-22-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2c-.1-1.1-1.4-6.6-14.3-6.7-12.9-.1-24 2.5-25.3 5.9-1.3 3.4-2.7 11.4-5.3 19.1-2.6 7.7-33.9 77.3-42.1 95.4-4.2 9.2-7.8 16.6-10.4 21.6s-.2.3-.4.9c-2.2 4.3-3.5 6.7-3.5 6.7v.1c-1.7 3.2-3.6 6.1-4.5 6.1-.6 0-1.9-8.4.3-19.9 4.7-24.2 15.8-61.8 15.7-63.1-.1-.7 2.1-7.2-7.3-10.7-9.1-3.3-12.4 2.2-13.2 2.2-.8 0-1.4 2-1.4 2s10.1-42.4-19.4-42.4c-18.4 0-44 20.2-56.6 38.5-7.9 4.3-25 13.6-43 23.5-6.9 3.8-14 7.7-20.7 11.4-.5-.5-.9-1-1.4-1.5-35.8-38.2-101.9-65.2-99.1-116.5 1-18.7 7.5-67.8 127.1-127.4 98-48.8 176.4-35.4 189.9-5.6 19.4 42.5-41.9 121.6-143.7 133-38.8 4.3-59.2-10.7-64.3-16.3-5.3-5.9-6.1-6.2-8.1-5.1-3.3 1.8-1.2 7 0 10.1 3 7.9 15.5 21.9 36.8 28.9 18.7 6.1 64.2 9.5 119.2-11.8C367 196.5 415.1 130.2 401 74.7 386.6 18.3 293.1-.2 204.6 31.2 151.9 49.9 94.9 79.3 53.9 117.6 5.2 163.2-2.6 202.9.6 219.5c11.4 58.9 92.6 97.3 125.1 125.7-1.6.9-3.1 1.7-4.5 2.5-16.3 8.1-78.2 40.5-93.7 74.7-17.5 38.8 2.9 66.6 16.3 70.4 41.8 11.6 84.6-9.3 107.6-43.6s20.2-79.1 9.6-99.5c-.1-.3-.3-.5-.4-.8 4.2-2.5 8.5-5 12.8-7.5 8.3-4.9 16.4-9.4 23.5-13.3-4 10.8-6.9 23.8-8.4 42.6-1.8 22 7.3 50.5 19.1 61.7 5.2 4.9 11.5 5 15.4 5 13.8 0 20-11.4 26.9-25 8.5-16.6 16-35.9 16-35.9s-9.4 52.2 16.3 52.2c9.4 0 18.8-12.1 23-18.3v.1s.2-.4.7-1.2c1-1.5 1.5-2.4 1.5-2.4v-.3c3.8-6.5 12.1-21.4 24.6-46 16.2-31.8 31.7-71.5 31.7-71.5s1.4 9.7 6.2 25.8c2.8 9.5 8.7 19.9 13.4 30-3.8 5.2-6.1 8.2-6.1 8.2s0 .1.1.2c-3 4-6.4 8.3-9.9 12.5-12.8 15.2-28 32.6-30 37.6-2.4 5.9-1.8 10.3 2.8 13.7 3.4 2.6 9.4 3 15.7 2.5 11.5-.8 19.6-3.6 23.5-5.4 6.2-2.2 13.4-5.7 20.2-10.6 12.5-9.2 20.1-22.4 19.4-39.8-.4-9.6-3.5-19.2-7.3-28.2 1.1-1.6 2.3-3.3 3.4-5 19.8-28.9 35.1-60.6 35.1-60.6s1.4 9.7 6.2 25.8c2.4 8.1 7.1 17 11.4 25.7-18.6 15.1-30.1 32.6-34.1 44.1-7.4 21.3-1.6 30.9 9.3 33.1 4.9 1 11.9-1.3 17.1-3.5 6.5-2.2 14.3-5.7 21.6-11.1 12.5-9.2 24.6-22.1 23.8-39.6-.3-7.9-2.5-15.8-5.4-23.4 15.7-6.6 36.1-10.2 62.1-7.2 55.7 6.5 66.6 41.3 64.5 55.8-2.1 14.6-13.8 22.6-17.7 25-3.9 2.4-5.1 3.3-4.8 5.1.5 2.6 2.3 2.5 5.6 1.9 4.6-.8 29.2-11.8 30.3-38.7 1.6-34-31.1-71.4-89-71.1zM121.8 436.6c-18.4 20.1-44.2 27.7-55.3 21.3C54.6 451 59.3 421.4 82 400c13.8-13 31.6-25 43.4-32.4 2.7-1.6 6.6-4 11.4-6.9.8-.5 1.2-.7 1.2-.7.9-.6 1.9-1.1 2.9-1.7 8.3 30.4.3 57.2-19.1 78.3zm134.4-91.4c-6.4 15.7-19.9 55.7-28.1 53.6-7-1.8-11.3-32.3-1.4-62.3 5-15.1 15.6-33.1 21.9-40.1 10.1-11.3 21.2-14.9 23.8-10.4 3.5 5.9-12.2 49.4-16.2 59.2zm111 53c-2.7 1.4-5.2 2.3-6.4 1.6-.9-.5 1.1-2.4 1.1-2.4s13.9-14.9 19.4-21.7c3.2-4 6.9-8.7 10.9-13.9 0 .5.1 1 .1 1.6-.1 17.9-17.3 30-25.1 34.8zm85.6-19.5c-2-1.4-1.7-6.1 5-20.7 2.6-5.7 8.6-15.3 19-24.5 1.2 3.8 1.9 7.4 1.9 10.8-.1 22.5-16.2 30.9-25.9 34.4z"/></svg>
+              <span title="HTML 5"><fa-icon name="html5" class="fill-current text-white hover:text-orange mx-2 h-6"></fa-icon></span>
+              <span title="PHP"><fa-icon name="php" class="fill-current text-white hover:text-indigo mx-2 h-6"></fa-icon></span>
+              <span title="Laravel"><fa-icon name="laravel" class="fill-current text-white hover:text-red mx-2 h-6"></fa-icon></span>
+              <span title="CSS 3"><fa-icon name="css3" class="fill-current text-white hover:text-blue mx-2 h-6"></fa-icon></span>
+              <span title="SASS"><fa-icon name="sass" class="fill-current text-white hover:text-pink mx-2 h-6"></fa-icon></span>
+              <span title="JavaScript"><fa-icon name="js-square" class="fill-current text-white hover:text-yellow mx-2 h-6"></fa-icon></span>
+              <span title="Vuejs"><fa-icon name="vuejs" class="fill-current text-white hover:text-teal-dark mx-2 h-6"></fa-icon></span>
             </div>
           </div>
         </footer>

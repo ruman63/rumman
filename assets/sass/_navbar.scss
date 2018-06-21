@@ -1,0 +1,22 @@
+.nav-link {
+    @apply .px-3 .py-2 .relative .text-xs .uppercase .tracking-wide .mx-1 ;
+    &:after, &:before {
+        content: '';
+        height: 1px;
+        width: 0px;
+        @apply .absolute .bg-orange ;
+        transition: all 0.4s ease-in;
+    }
+    &:after {
+        @apply .pin-b .pin-r ;
+    }
+    &:before {
+        @apply .pin-t .pin-l ;
+    }
+    &:hover {
+        @apply .text-orange-light ;
+        &:after, &:before {
+            @apply .w-full;
+        }
+    }
+}

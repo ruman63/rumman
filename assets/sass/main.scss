@@ -7,4 +7,7 @@ a {
     @apply .no-underline ;
     color: inherit;
 }
+
+@import 'navbar';
+
 @tailwind utilities;
