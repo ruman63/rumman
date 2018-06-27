@@ -45,6 +45,7 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'transparent': 'transparent',
+  'black-alpha-95': 'rgba(0, 0, 0, 0.95)',
   'black-alpha-90': 'rgba(0, 0, 0, 0.9)',
   'black-alpha-80': 'rgba(0, 0, 0, 0.8)',
   'black-alpha-75': 'rgba(0, 0, 0, 0.75)',
@@ -331,6 +332,9 @@ module.exports = {
     'tight': '-0.05em',
     'normal': '0',
     'wide': '0.05em',
+    'wider': '0.2em',
+    'widest': '0.4em',
+    'superwide': '1.2em'
   },
 
 
@@ -536,6 +540,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    'navSize': '75px',
     '400px': '400px',
     'full': '100%',
     'screen': '100vh'
@@ -657,6 +662,7 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    'navSize': '75px',
   },
 
 
@@ -685,6 +691,9 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '3rem',
+    '16': '4rem',
+    '24': '6rem'
   },
 
 
@@ -875,7 +884,7 @@ module.exports = {
     pointerEvents: ['responsive'],
     position: ['responsive'],
     resize: ['responsive'],
-    shadows: ['responsive'],
+    shadows: ['responsive', 'hover'],
     svgFill: [],
     svgStroke: [],
     textAlign: ['responsive'],
