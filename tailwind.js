@@ -201,15 +201,15 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Ubuntu',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
       'Segoe UI',
       'Roboto',
       'Oxygen',
-      'Ubuntu',
-      'Cantarell',
       'Fira Sans',
+      'Cantarell',
       'Droid Sans',
       'Helvetica Neue',
       'sans-serif',
@@ -225,6 +225,10 @@ module.exports = {
       'Liberation Serif',
       'Georgia',
       'serif',
+    ],
+    'display': [
+      'Audiowide',
+      'sans-serif',
     ],
     'mono': [
       'Menlo',
@@ -869,7 +873,7 @@ module.exports = {
     float: ['responsive'],
     fonts: ['responsive'],
     fontWeights: ['responsive', 'hover'],
-    height: ['responsive'],
+    height: ['responsive', 'hover'],
     leading: ['responsive'],
     lists: ['responsive'],
     margin: ['responsive'],
@@ -888,7 +892,7 @@ module.exports = {
     svgFill: [],
     svgStroke: [],
     textAlign: ['responsive'],
-    textColors: ['responsive', 'hover'],
+    textColors: ['responsive', 'hover', 'focus'],
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover'],
     tracking: ['responsive'],

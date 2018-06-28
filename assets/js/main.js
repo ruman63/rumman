@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App';
 import Icon from './components/Icon.vue';
 import Tooltip from './components/Tooltip.vue';
+import NavMenu from './components/NavMenu.vue';
 import throttle from 'lodash.throttle';
 
 Vue.directive('click-outside', {
@@ -29,6 +30,7 @@ Vue.directive('fix-top', {
 
 Vue.component('fa-icon', Icon);
 Vue.component('v-tooltip', Tooltip);
+Vue.component('nav-menu', NavMenu);
 
 new Vue({
     el: "#app",

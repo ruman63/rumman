@@ -1,15 +1,16 @@
 .nav-menu-links {
-    @apply .list-reset .flex .flex-col .items-center .justify-center .font-semibold .text-orange .bg-black  .text-lg .fixed .w-64 .pin-y .pin-r  ;
+    @apply .text-orange .fixed .pin-y .pin-r .z-50 .bg-black-alpha-95 ;
     box-shadow: 10px 0 25px 0 rgba(255, 255, 255, 0.5);
-    @media screen and (min-width:768px) {
-        @apply .flex-row .flex-1 .justify-end .bg-transparent .text-xs .relative .w-auto  ;
+    @media screen and (min-width:576px) {
+        box-shadow: none;
+        @apply .bg-transparent ;
     }
 }
 
 .nav-link {
-    @apply .py-6 .relative .uppercase .tracking-wide ;
-    @media screen and (min-width:768px) {
-        @apply .px-3 .py-2 ;
+    @apply .mx-6 .py-2 .uppercase .tracking-wide .text-sm ;
+    @media screen and (min-width:576px) {
+        @apply .relative ;
         &:after, &:before {
             content: '';
             height: 1px;
@@ -32,8 +33,8 @@
     }
 }
 
-.nav-fixed-transparent {
-    @apply .bg-transparent .fixed .pin-t .pin-x .z-50 .pb-4 .pt-8 ;
+.nav-wrapper {
+    @apply .bg-transparent .relative .z-40 .pb-4 .pt-8 ;
     transition: all 0.7s;
     &.nav-fixed {
         @apply .py-2 .bg-black-alpha-95 ;

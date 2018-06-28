@@ -1,6 +1,6 @@
 @tailwind preflight;
 *:focus {
-    outline: none;
+    outline: none !important;
 }
 @tailwind components;
 a {

@@ -2,8 +2,5 @@
     "/dist/js/main.js": "/dist/js/main.js",
     "/dist/css/main.css": "/dist/css/main.css",
     "/dist/index.html": "/dist/index.html",
-    "/dist/images/banner.jpg": "/dist/images/banner.jpg",
-    "/dist/images/s1.jpg": "/dist/images/s1.jpg",
-    "/dist/images/s2.png": "/dist/images/s2.png",
-    "/dist/images/s3.jpg": "/dist/images/s3.jpg"
+    "/dist/images/bg.jpg": "/dist/images/bg.jpg"
 }
