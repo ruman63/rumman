@@ -1,21 +1,20 @@
 let mix = require('laravel-mix');
+let build = require('./tasks/build.js');
 require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
 
-mix.js('assets/js/main.js', 'dist/js/')
-    .sass('assets/sass/main.scss', 'dist/css/')
+mix.disableSuccessNotifications();
+mix.setPublicPath('source/assets/build');
+mix.webpackConfig({
+    plugins: [
+        build.jigsaw,
+        build.browserSync(),
+        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
+    ]
+});
+
+mix.js('source/_assets/js/main.js', 'js')
+    .sass('source/_assets/sass/main.scss', 'css')
     .tailwind()
-    .purgeCss({
-        folders: ['assets', 'views']
-    })
-    .copy('views/*.html', 'dist/')
-    .copy('assets/images/**', 'dist/images/')
-    .browserSync({
-        server: 'dist',
-        files: "dist/**",
-        proxy: false
-    });
-
-if(mix.inProduction()) {
-    mix.copyDirectory('dist', '../build');
-}
+    .options({
+        processCssUrls: false,
+    }).version();

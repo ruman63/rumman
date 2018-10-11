@@ -1,5 +1,9 @@
-<template>
-  <div id="app">
+@extends('_layouts.master')
+@section('head')
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">     
+@endsection
+@section('body')
+<div id="app">
     <header class="w-full fixed pin-t pin-x z-50">
       <div class="nav-wrapper" v-fix-top="'nav-fixed'">
         <div class="container mx-auto">
@@ -14,7 +18,7 @@
         </div>
       </div>
     </header>
-    <section class="bg-cover bg-fixed bg-center" style="background-image: url('/images/bg.jpg');">
+    <section class="bg-cover bg-fixed bg-center" style="background-image: url('{{ $page->baseUrl }}/assets/images/bg.jpg');">
       <div class="bg-black-alpha-95 py-navSize flex flex-col items-center min-h-screen text-white">
         <div class="flex-1 flex flex-col justify-center w-full">
           <div class="container mx-auto">
@@ -135,9 +139,8 @@
       </div>
     </footer>
   </div>
-</template>
-<script>
-export default {
+@endsection
 
-}
-</script>
+@section('scripts')
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+@endsection

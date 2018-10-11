@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import App from './App';
 import Icon from './components/Icon.vue';
 import Tooltip from './components/Tooltip.vue';
 import NavMenu from './components/NavMenu.vue';
@@ -34,7 +33,5 @@ Vue.component('nav-menu', NavMenu);
 
 new Vue({
     el: "#app",
-    components: { App },
-    template: '<App/>'
 });
 
