@@ -9,5 +9,44 @@ a {
 }
 
 @import 'navbar';
+.hero-section {
+    @apply bg-cover bg-fixed bg-center;
+    .hero-overlay {
+        @apply bg-black-alpha-90 py-navSize flex flex-col items-center min-h-screen text-white;
+    }
+    .hero-display {
+        @apply flex flex-col items-center p-3;
+        @screen md {
+            @apply p-8;
+        }
+    }
+    .hero-skills {
+        @apply absolute pin-b pin-x flex items-center justify-center py-2;
+    }
+}
+.name {
+    @apply text-4xl mb-4 text-center font-display font-normal text-white leading-none uppercase tracking-wider;
+    @screen md {
+        @apply tracking-widest;
+    }
+    @screen lg {
+        @apply tracking-superwide mb-8;
+    }
+}
+.designation {
+    @apply text-2xl text-center font-display tracking-wide mb-4 leading-none;
+}
+.social-links {
+    @apply flex items-center h-6;
+    .social-link {
+        @apply h-4;
+        &:hover, &:focus {
+            @apply h-6;
+        }
+    }
+    .social-icon {
+        @apply h-full fill-current mx-1;
+    }
+}
 
 @tailwind utilities;
