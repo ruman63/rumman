@@ -12,9 +12,7 @@
                     </button>
                 </div>
                 <ul class="list-reset flex flex-col sm:flex-row items-start justify-center">
-                    <li class="nav-link"><a href="#coming">About</a></li>
-                    <li class="nav-link"><a href="#coming">My Work</a></li>
-                    <li class="nav-link"><a href="#coming">Contact</a></li>
+                    <slot></slot>
                 </ul>
             </div>
         </transition>

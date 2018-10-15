@@ -7,7 +7,11 @@
               <a href="#">RS</a>
             </h1>
           </div>
-          <nav-menu></nav-menu>
+          <nav-menu>
+            <li class="nav-link"><a href="#coming">About</a></li>
+            <li class="nav-link"><a href="#coming">My Work</a></li>
+            <li class="nav-link"><a href="#coming">Contact</a></li>
+          </nav-menu>
         </nav>
       </div>
     </div>
