@@ -7,7 +7,7 @@ dist
 dist/**
 /vendor/
 /source/assets/build/
-/deploy.sh
+/deploy*
 
 # Editor directories and files
 .idea
