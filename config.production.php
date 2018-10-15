@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'http://rummansaleem.me',
+    'baseUrl' => 'https://rummansaleem.me',
     'production' => true,
 ];
