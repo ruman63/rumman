@@ -6,5 +6,9 @@ return [
     ],
     'baseUrl' => '',
     'production' => false,
-    'collections' => [],
+    'collections' => [
+        'skills' => [
+            'sort' => 'order',
+        ],
+    ],
 ];
