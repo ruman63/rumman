@@ -4,7 +4,7 @@
         <nav class="flex justify-between px-3 md:px-8">
           <div class="brand">
             <h1 class="text-orange hover:text-white font-display">
-              <a href="#">RS</a>
+              <a href="{{$page->baseUrl}}/">RS</a>
             </h1>
           </div>
           <nav-menu>
