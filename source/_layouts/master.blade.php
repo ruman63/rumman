@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">     
         @yield('head')
     </head>
-    <body>
+    <body class="font-sans">
         <div id="app">
             @include('_partials.header')
             @yield('main-content')

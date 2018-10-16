@@ -17,6 +17,9 @@ return [
         ],
         'posts' => [
             'path' => 'blog/{filename}',
+            'dateString' => function ($page, $format = 'D, d M Y') {
+                return date($format, $page->date ?? time());
+            },
         ],
     ],
 ];
