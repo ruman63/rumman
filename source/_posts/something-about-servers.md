@@ -1,10 +1,10 @@
 ---
 extends: _layouts.post
 section: content
-title: Building static websites using Jigsaw
-cover: programming-cover.jpg
+title: Something About Servers
+cover: bg.jpg
 date: 2018-11-12
-tags: [Web Development, Site Generator, Jigsaw]
+tags: [Linux, Servers]
 read: 5
 ---
 
@@ -32,17 +32,3 @@ composer require tightenco/jigsaw
 ```bash
 ./vendor/bin/jigsaw init
 ```
-
-There are somethings you can do after this guide:
-- First thing
-- Second Thing
-- Third Thing
-- Fourth Thing
-
-There are somethings you can do after this guide:
-1. First thing
-2. Second Thing
-3. Third Thing
-4. Fourth Thing
-
-Thank you for coming along. 😉

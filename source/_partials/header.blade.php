@@ -1,5 +1,5 @@
-<header class="w-full{{$fixedHeader ? ' fixed ' : ' '}}pin-t pin-x z-50">
-  <div class="nav-wrapper{{$fixedHeader ? '': ' nav-fixed'}}" {{ $fixedHeader ? 'v-fix-top="nav-fixed"' : '' }}>
+<header class="w-full{{!$staticHeader ? ' fixed ' : ' '}}pin-t pin-x z-50">
+  <div class="nav-wrapper{{!$staticHeader ? '': ' nav-fixed'}}" {{ !$staticHeader ? 'v-fix-top="nav-fixed"' : '' }}>
       <div class="container mx-auto">
         <nav class="flex justify-between px-3 md:px-8">
           <div class="brand">

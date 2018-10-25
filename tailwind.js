@@ -201,6 +201,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Open Sans',
       'Ubuntu',
       'system-ui',
       'BlinkMacSystemFont',
@@ -215,6 +216,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Playfair Display',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -261,6 +263,7 @@ module.exports = {
   */
 
   textSizes: {
+    '2xs': '.625rem',
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
     'base': '1rem',     // 16px
@@ -587,6 +590,9 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    '32': '8rem',
+    '48': '12rem',
+    '64': '16rem',
     'full': '100%',
     'screen': '100vh'
   },
@@ -618,6 +624,7 @@ module.exports = {
     '4xl': '90rem',
     '5xl': '100rem',
     '1/2': '50%',
+    '2/3': '66.67%',
     'full': '100%',
   },
 
@@ -666,6 +673,13 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
+    '24': '6rem',
+    '32': '8rem',
+    '48': '12rem',
+    '64': '16rem',
     'navSize': '75px',
   },
 

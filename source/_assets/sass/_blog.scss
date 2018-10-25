@@ -1,8 +1,6 @@
 .blog-post {
-    @apply mx-auto px-3;
-    max-width: config('screens.md');
     .blog-post-content {
-        @apply antialiased;
+        @apply font-sans text-lg leading-normal antialiased;
         h1, h2, h3, h4, h5, h6 {
             @apply font-semibold;
         }
@@ -10,13 +8,20 @@
             @apply my-6;
         }
         h2, h3 {
-            @apply my-4;
+            @apply my-4 relative cursor-pointer;
+            &::before {
+                content: '#';
+                @apply hidden mr-1 text-orange absolute;
+                transform: translateX(-130%);
+            }
+            &:hover::before {
+                @apply inline-block;
+            }
         }
         h4, h5, h6 {
             @apply my-2;
         }
-        p {
-            @apply font-serif text-lg leading-normal;
+        p, ul, ol {
             &:not(:last-child) {
                 @apply mb-3;
             }
@@ -25,13 +30,13 @@
             @apply underline;
         }
         pre {
-            @apply font-mono text-sm p-4 bg-grey-light rounded border my-3;
+            @apply font-mono text-sm p-4 bg-grey-light rounded border my-3 overflow-auto;
         }
         kbd {
             @apply bg-grey-light rounded p-1;
         }
         hr {
-            @apply my-12 text-center text-black;
+            @apply my-12 text-center text-black border-0;
             &::after {
                 content: '* * *';
                 letter-spacing: .5em;
