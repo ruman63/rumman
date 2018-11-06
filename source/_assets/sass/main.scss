@@ -13,6 +13,29 @@ hr {
 }
 
 @import 'navbar';
+
+.brand {
+    .logo {
+        @apply h-12;
+    }
+    .cube, .shadow {
+        transition: transform .4s;
+        transform-origin: center center;
+    }
+    &:hover {
+        .cube{
+            transform: translateY(-12px);
+        }
+        .shadow {
+            transform: scale(0.8, 0.8) translateY(10px);
+        }
+    } 
+    @screen md {
+        .logo {
+            @apply h-16;
+        }
+    }
+}
 .hero-section {
     @apply bg-cover bg-fixed bg-center;
     .hero-overlay {
