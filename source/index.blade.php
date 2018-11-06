@@ -1,4 +1,5 @@
 @extends('_layouts.master', ['fixedHeader' => true])
+@section('title', 'Ruman Saleem')
 @section('main-content')
 <section class="hero-section" style="background-image: url('{{ $page->baseUrl }}/assets/images/bg.jpg');">
     <div class="hero-overlay">
