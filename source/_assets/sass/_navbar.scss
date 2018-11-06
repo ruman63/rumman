@@ -1,5 +1,5 @@
 .nav-menu-links {
-    @apply .text-orange .fixed .pin-y .pin-r .z-50 .bg-black-alpha-95 ;
+    @apply .text-primary .fixed .pin-y .pin-r .z-50 .bg-black-alpha-95 ;
     box-shadow: 10px 0 25px 0 rgba(255, 255, 255, 0.5);
     @screen sm {
         box-shadow: none;
@@ -18,7 +18,7 @@
             content: '';
             height: 1px;
             width: 0px;
-            @apply .absolute .bg-orange ;
+            @apply .absolute .bg-primary ;
             transition: all 0.4s ease-in;
         }
         &.active::after, &.active::before {
@@ -32,7 +32,7 @@
         }
     }
     &:hover {
-        @apply .text-orange-lighter ;
+        @apply .text-primary-lighter ;
         &:after, &:before {
             @apply .w-full;
         }

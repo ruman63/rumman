@@ -71,13 +71,15 @@ let colors = {
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
 
-  'orange-darkest': '#462a16',
-  'orange-darker': '#613b1f',
-  'orange-dark': '#de751f',
+  'primary-darkest': '#462a16',
+  'primary-darker': '#613b1f',
+  'primary-dark': '#de751f',
+  'primary': '#f6993f',
+  'primary-light': '#faad63',
+  'primary-lighter': '#fcd9b6',
+  'primary-lightest': '#fff5eb',
+  
   'orange': '#f6993f',
-  'orange-light': '#faad63',
-  'orange-lighter': '#fcd9b6',
-  'orange-lightest': '#fff5eb',
 
   'yellow-darkest': '#453411',
   'yellow-darker': '#684f1d',

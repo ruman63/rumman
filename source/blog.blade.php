@@ -17,7 +17,7 @@
             </address>
             <ul class="list-reset flex flex-wrap -mx-1 text-2xs uppercase">
                 @foreach($post->tags as $tag)
-                <li class="bg-orange-dark py-1 px-2 rounded text-white font-semibold mx-1 whitespace-nowrap my-1">{{$tag}}</li>
+                <li class="bg-primary-dark py-1 px-2 rounded text-white font-semibold mx-1 whitespace-nowrap my-1">{{$tag}}</li>
                 @endforeach
             </ul>
         </div>

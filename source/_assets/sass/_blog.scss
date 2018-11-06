@@ -11,7 +11,7 @@
             @apply my-4 relative cursor-pointer;
             &::before {
                 content: '#';
-                @apply hidden mr-1 text-orange absolute;
+                @apply hidden mr-1 text-primary absolute;
                 transform: translateX(-130%);
             }
             &:hover::before {

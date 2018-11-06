@@ -1,7 +1,7 @@
 <footer class="bg-black">
 
     <div class="container mx-auto py-4">
-        <div class="flex flex-wrap justify-center text-orange -mb-3">
+        <div class="flex flex-wrap justify-center text-primary -mb-3">
             <div class="flex items-center px-4 mb-3">
                 <fa-icon name="envelope" class="w-4 fill-current mr-2"></fa-icon>
                 <a href="mailto:ruman63@gmail.com" class="hover:text-white">ruman63@gmail.com</a>
@@ -17,6 +17,6 @@
         </div>
     </div>
     <div class="py-4 bg-black-alpha-90 text-white text-center">
-        <p>Copyright &copy; 2018 <a href="https://github.com/ruman63" class="text-orange">Ruman Saleem</a>. All rights reserved.</p>
+        <p>Copyright &copy; 2018 <a href="https://github.com/ruman63" class="text-primary">Ruman Saleem</a>. All rights reserved.</p>
     </div>
 </footer>

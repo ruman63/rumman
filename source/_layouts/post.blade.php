@@ -4,7 +4,7 @@
 @section('main-content')
     <article class="blog-post">
         <section class="article-header bg-cover bg-fixed bg-center bg-black" style="background-image: url('{{$page->baseUrl}}/assets/images/covers/{{ $page->cover }}')">
-            <div class="bg-black-alpha-{{$page->transparency ?? 90}} pt-navSize pb-3 text-orange">
+            <div class="bg-black-alpha-{{$page->transparency ?? 90}} pt-navSize h-64 pb-3 text-primary flex flex-col justify-end">
                 <div class="container mx-auto px-4 md:px-8">
                     <header class="flex flex-col justify-center items-center min-h-48 sm:min-h-64 py-8">
                         <h2 class="text-3xl sm:text-4xl mb-4 font-serif font-normal text-center tracking-wide">{{ $page->title }}</h2>
