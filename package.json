@@ -12,6 +12,7 @@
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^3.2.3",
         "hasbin": "^1.2.3",
+        "highlight.js": "^9.13.1",
         "laravel-mix": "^2.0.0",
         "laravel-mix-tailwind": "^0.1.0",
         "lodash.throttle": "^4.1.1",

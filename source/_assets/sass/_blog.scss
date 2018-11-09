@@ -26,14 +26,11 @@
                 @apply mb-3;
             }
         }
-        a {
-            @apply underline;
+        :not(pre) > code {
+            @apply bg-grey-light rounded p-1 text-xs;
         }
         pre {
-            @apply font-mono text-sm p-4 bg-grey-light rounded border my-3 overflow-auto;
-        }
-        kbd {
-            @apply bg-grey-light rounded p-1;
+            @apply font-mono text-sm p-4 rounded my-4 overflow-auto;
         }
         hr {
             @apply my-12 text-center text-black border-0;
