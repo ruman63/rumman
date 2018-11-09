@@ -78,3 +78,7 @@ hr {
 @import 'blog';
 
 @tailwind utilities;
+
+.transition\:width {
+    transition: width 1s;
+}

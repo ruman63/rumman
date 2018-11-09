@@ -4,6 +4,7 @@ import Tooltip from './components/Tooltip.vue';
 import NavMenu from './components/NavMenu.vue';
 import CommentBox from './components/CommentBox';
 import Highlight from './components/Highlight';
+import ScrollProgress from './components/ScrollProgress';
 import throttle from 'lodash.throttle';
 
 Vue.directive('click-outside', {
@@ -34,6 +35,7 @@ Vue.component('v-tooltip', Tooltip);
 Vue.component('nav-menu', NavMenu);
 Vue.component('comment-box', CommentBox);
 Vue.component('syntax-highlight', Highlight);
+Vue.component('scroll-progress', ScrollProgress);
 
 new Vue({
     el: "#app",
