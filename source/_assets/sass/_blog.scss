@@ -1,14 +1,17 @@
 .blog-post {
     .blog-post-content {
-        @apply font-sans text-lg leading-normal antialiased;
+        @apply font-sans text-lg leading-normal antialiased flex flex-col;
         h1, h2, h3, h4, h5, h6 {
             @apply font-semibold;
         }
         h1 {
-            @apply my-6;
+            @apply my-8;
+        }
+        h4, h5, h6 {
+            @apply my-4;
         }
         h2, h3 {
-            @apply my-4 relative cursor-pointer;
+            @apply my-6 relative cursor-pointer;
             &::before {
                 content: '#';
                 @apply hidden mr-1 text-primary absolute;
@@ -18,12 +21,19 @@
                 @apply inline-block;
             }
         }
-        h4, h5, h6 {
-            @apply my-2;
-        }
         p, ul, ol {
             &:not(:last-child) {
-                @apply mb-3;
+                @apply mb-4;
+            }
+        }
+        a{
+            @apply relative leading-tight;
+            &::after {
+                content: '';
+                z-index: -1;
+                bottom: 2px;
+                @apply w-full;
+                @apply absolute pin-x bg-primary-lighter h-2;
             }
         }
         :not(pre) > code {

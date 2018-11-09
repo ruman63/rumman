@@ -7,14 +7,15 @@ date: 2018-11-12
 tags: [Web Development, Site Generator, Jigsaw]
 read: 5
 ---
+[Jigsaw](https://jigsaw.tighten.co) is a framework for building modern _static_ websites, using the similar tooling that powers [Laravel](https://laravel.com) application. It supports Blade templating (just as same as Laravel) along with the markdown, which is great for content-driven pages (like article, blog post, or documentation pages). Jigsaw makes it very simple to create a blade layout and fill it in with markdown. It makes use of [laravel-mix](https://github.com/jeffreyway/laravel-mix) to compile assets. 🙂
 
-[Jigsaw](https://jigsaw.tighten.co) is a framework for building modern _static_ websites, using the similar tooling that powers [Laravel](https://laravel.com) application. It supports Blade templating (just as same as Laravel) along with the markdown, which is great for content-driven pages (like article, blog post, or documentation pages). Jigsaw makes it very simple to create a blade layout and fill it in with markdown. It makes use of [laravel-mix](https://github.com/jeffreyway/laravel-mix) to compile assets.
+Let's [get started](#started) with our first static website built with jigsaw.
 
-Let's get started with our first static website built with jigsaw.
+![Tech Blog Image](/assets/images/covers/gnome-cover.png)
 
 ---
 
-## Getting Started
+## Getting Started                  {#started}
 
 Initialise the jigsaw project following these steps:
 
@@ -39,10 +40,21 @@ There are somethings you can do after this guide:
 - Third Thing
 - Fourth Thing
 
+```php
+public function getTestDone($test)
+{
+    return $test->done() || $this->test->done();
+}
+```
+
 There are somethings you can do after this guide:
 1. First thing
+    1. tehre
+    2. here
 2. Second Thing
 3. Third Thing
 4. Fourth Thing
 
-Thank you for coming along. 😉
+some `inline` code 
+
+Thank you for coming along. 🙂
