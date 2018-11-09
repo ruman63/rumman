@@ -35,6 +35,7 @@
                 <li class="px-3 py-2 rounded cursor-pointer text-xs uppercase bg-grey-light hover:bg-grey mx-2">{{$tag}}</li>
                 @endforeach
             </ul>
+            <comment-box></comment-box>
         </div>
     </article>
 @endsection

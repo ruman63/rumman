@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Icon from './components/Icon.vue';
 import Tooltip from './components/Tooltip.vue';
 import NavMenu from './components/NavMenu.vue';
+import CommentBox from './components/CommentBox';
 import Highlight from './components/Highlight';
 import throttle from 'lodash.throttle';
 
@@ -31,6 +32,7 @@ Vue.directive('fix-top', {
 Vue.component('fa-icon', Icon);
 Vue.component('v-tooltip', Tooltip);
 Vue.component('nav-menu', NavMenu);
+Vue.component('comment-box', CommentBox);
 Vue.component('syntax-highlight', Highlight);
 
 new Vue({
