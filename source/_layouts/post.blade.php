@@ -22,11 +22,9 @@
             </div>
         </section>
         <article class="container mx-auto lg:max-w-2/3 mb-16">
-            <main id="post" class="blog-post-content p-6 sm:p-8">
-                <syntax-highlight>
+            <syntax-highlight tag="main" id="post" class="blog-post-content p-6 sm:p-8">
                     @yield('content')
                 </syntax-highlight>
-            </main>
             <ul class="list-reset flex flex-wrap items-center -mx-2 mt-12">
                 @foreach($page->tags as $tag)
                 <li class="px-3 py-2 rounded cursor-pointer text-xs uppercase bg-grey-light hover:bg-grey mx-2">{{$tag}}</li>

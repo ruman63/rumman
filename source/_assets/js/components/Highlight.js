@@ -9,7 +9,7 @@ export default {
         this.highlight(this.$el.querySelectorAll('pre'));
     },
     render(h){
-        return h('div', this.$slots.default);
+        return h(this.tag, this.$slots.default);
     },
 
     methods: {
